@@ -1,0 +1,76 @@
+/* global setting */
+* {
+  box-sizing: border-box;
+}
+/* global styling  */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.4em;
+}
+/* #(id) , .(class) */
+#container {
+  max-width: 960px;
+  margin: 30px auto;
+  background-color: rgba(0, 0, 0, 0.9);
+}
+
+/* margin: 2 */
+
+/* default box design */
+.box {
+  background: #f4f4f4;
+  padding: 20px;
+  margin-bottom: 10px;
+  border: 1px solid #333;
+}
+/* nested selector */
+.box p {
+  text-align: left;
+}
+.box h2 {
+  text-align: center;
+}
+/* applying float property */
+#box-2 {
+  width: 32%;
+  position: relative;
+  float: left;
+  margin-right: 2%;
+  background-color: red;
+}
+#box-3 {
+  position: relative;
+  width: 32%;
+  float: right;
+  background-color: green;
+}
+
+#box-2,
+#box-3 {
+  display: block;
+  z-index: -1;
+}
+
+.box-4 {
+  z-index: -1;
+}
+#box-5 {
+  width: 32%;
+  float: right;
+  margin-right: 2%;
+}
+
+/* clear div 4 */
+.clr {
+  clear: both;
+}
+
+#box-6 {
+  width: 66%;
+  float: left;
+  margin-right: 2%;
+}
+#box-7 {
+  width: 32%;
+  float: right;
+}
